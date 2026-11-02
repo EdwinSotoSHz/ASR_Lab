@@ -2,7 +2,7 @@
 
 <details>
 <summary>
-    Router Sucursal
+    <b>Router Sucursal</b>
 </summary>
 
 ```ini
@@ -45,11 +45,10 @@ line console 0
 ```
 
 </details>
-<br>
 
 <details>
 <summary>
-    Router Gerencia
+    <b>Router Gerencia</b> 
 </summary>
 
 ```ini
@@ -93,9 +92,7 @@ interface g0/0
  ip access-group PERMISOS in
  exit
 ```
-
 </details>
-<br>
 
 - **ACL `PERMISOS`** (entrante en `g0/0` de Gerencia): **deniega** HTTP/HTTPS desde `192.168.10.2/24` y `192.168.10.3/24` hacia `10.10.0.3`, y **permite todo lo demás**, incluido **FTP** (no se bloquea).
 
