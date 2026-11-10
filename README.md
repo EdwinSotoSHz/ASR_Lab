@@ -83,8 +83,10 @@ router ospf 2
  exit
 
 ip access-list extended PERMISOS
- deny tcp 192.168.10.0 0.0.0.255 host 10.10.0.3 eq www
- deny tcp 192.168.10.0 0.0.0.255 host 10.10.0.3 eq 443
+ deny tcp host 192.168.10.2 host 10.10.0.3 eq www
+ deny tcp host 192.168.10.2 host 10.10.0.3 eq 443
+ deny tcp host 192.168.10.3 host 10.10.0.3 eq www
+ deny tcp host 192.168.10.3 host 10.10.0.3 eq 443
  permit ip 192.168.10.0 0.0.0.255 any
  exit
 
