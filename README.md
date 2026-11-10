@@ -29,8 +29,8 @@ interface s0/0/0
 
 router ospf 1
  router-id 1.1.1.1
- network 172.16.10.1 0.0.255.255 area 1
- network 10.0.0.1 0.255.255.255 area 1
+ network 172.16.10.0 0.0.255.255 area 1
+ network 10.0.0.0 0.255.255.255 area 1
  network 200.10.10.0 255.255.255.252 area 1
  passive-interface g0/0
  passive-interface g0/1
@@ -75,8 +75,8 @@ interface s0/0/0
 
 router ospf 2
  router-id 2.2.2.2
- network 192.168.10.1 0.0.0.255 area 1
- network 10.10.0.1 0.0.255.255 area 1
+ network 192.168.10.0 0.0.0.255 area 1
+ network 10.10.0.0 0.0.255.255 area 1
  network 200.10.10.0 255.255.255.252 area 1
  passive-interface g0/0
  passive-interface g0/1
